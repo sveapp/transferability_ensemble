@@ -1,0 +1,2 @@
+music1_sample_iteration0_noise4000_loss[-2256223.5]_iterationnumber1_time.wav 	 0 	 result: error 
+music1_sample_iteration3_noise4000_loss[-2155937.]_iterationnumber1_time.wav 	 3 	 result: error 
