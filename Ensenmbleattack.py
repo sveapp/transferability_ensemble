@@ -436,42 +436,10 @@ class Ens:
             if np.abs(loss_lg_avg) < 0.1:
                 w3 = 0.0
             loss_avg = np.abs(loss_ds_avg) * w1 + np.abs(loss_as_avg) * w2 + np.abs(loss_lg_avg) * w3
-            # ============================================plan1=====================================================
-            # 方案一，使用串行的方式1
-            # delta_avg = delta_ds * w1 + delta_as * w2 + delta_lg * w3
-            # delta_avg = delta_ds * 1 + delta_as * 0 + delta_lg * 0
-            # delta_avg = delta_as * 1
-            # if np.abs(loss_as_avg) < 70 and i % 5 == 0:
-            #     delta_avg = delta_ds
-            # if np.abs(loss_as_avg) < 70 and i % 8 == 0:
-            #     delta_avg = delta_lg
-            # delta2 = delta_avg
-            # 方案一，使用串行的方式2，loss下降最小的model作为此次下降的起点
-            # v1 = np.abs(loss_ds_avg - lossOld_ds)
-            # v2 = np.abs(loss_as_avg - lossOld_as)
-            # v3 = np.abs(loss_lg_avg - lossOld_lg)
-            # lossOld_ds, lossOld_as, lossOld_lg = loss_ds_avg, loss_as_avg, loss_lg_avg
-            # if np.abs(loss_ds_avg) < 2:
-            #     v1 = 1.
-            # if np.abs(loss_as_avg) > 50:
-            #     v2 = v2
-            # if np.abs(loss_lg_avg) < 0.1:
-            #     v3 = 1.
-            # v = np.min([v1, v2, v3])
-            # delta2 = delta_ds if v == v1 else (delta_as if v == v2 else delta_lg)
-            # if np.abs(loss_as_avg) > 70:
-            #     delta2 = delta_as
-            # v = np.random.randint(0,3)
-            # delta2 = delta_ds if v == 1 else (delta_as if v == 2 else delta_lg)
-            delta2 = delta_as
-            # delta2 = (delta_ds + delta_as + delta_lg) / 3
+
+            delta2 = (delta_ds + delta_as + delta_lg) / 3
             feed_dict_adv = {self.place_delta: delta2}
             audio_new = sess.run(self.adv, feed_dict_adv)
-
-            # ============================================plan2=====================================================
-            # 使用并行的方式
-            # audio_new = adv_as * w1 + adv_as * w2 + adv_lg * w3  # 无法下降
-            # audio_new = (adv_ds + adv_as + adv_lg) / 3.
 
             print('%d,avg loss:%02f,loss_ds:%02f,loss_as:%02f,loss_lg:%02f' % (
                 i, loss_avg, loss_ds_avg, loss_as_avg, loss_lg_avg))
