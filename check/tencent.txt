@@ -1,0 +1,39 @@
+sample0_loss[289.58163].wav 	 0 	 result: Beautiful girls all over the world. 
+sample10_loss[228.95941].wav 	 10 	 result: null 
+sample20_loss[235.43735].wav 	 20 	 result: null 
+sample30_loss[237.20355].wav 	 30 	 result: null 
+sample40_loss[232.02979].wav 	 40 	 result: null 
+sample50_loss[231.61307].wav 	 50 	 result: null 
+sample60_loss[233.27615].wav 	 60 	 result: null 
+sample70_loss[231.09616].wav 	 70 	 result: null 
+sample80_loss[231.57504].wav 	 80 	 result: null 
+sample90_loss[231.26984].wav 	 90 	 result: null 
+sample100_loss[231.32494].wav 	 100 	 result: null 
+sample110_loss[231.14604].wav 	 110 	 result: null 
+sample120_loss[231.03963].wav 	 120 	 result: For you. 
+sample130_loss[230.92812].wav 	 130 	 result: null 
+sample140_loss[229.97563].wav 	 140 	 result: For you. 
+sample150_loss[229.4719].wav 	 150 	 result: null 
+sample160_loss[229.03162].wav 	 160 	 result: null 
+sample170_loss[229.44725].wav 	 170 	 result: null 
+sample180_loss[229.51266].wav 	 180 	 result: null 
+sample190_loss[229.07562].wav 	 190 	 result: null 
+sample200_loss[228.08405].wav 	 200 	 result: null 
+sample210_loss[229.0373].wav 	 210 	 result: null 
+sample220_loss[228.99309].wav 	 220 	 result: null 
+sample230_loss[228.67828].wav 	 230 	 result: null 
+sample240_loss[230.00671].wav 	 240 	 result: null 
+sample250_loss[229.39355].wav 	 250 	 result: null 
+sample260_loss[229.68852].wav 	 260 	 result: For you. 
+sample270_loss[229.61713].wav 	 270 	 result: null 
+sample280_loss[228.48067].wav 	 280 	 result: null 
+sample290_loss[229.32066].wav 	 290 	 result: null 
+sample300_loss[229.36433].wav 	 300 	 result: null 
+sample310_loss[230.18462].wav 	 310 	 result: null 
+sample320_loss[229.04579].wav 	 320 	 result: null 
+sample330_loss[230.00764].wav 	 330 	 result: null 
+sample340_loss[229.0667].wav 	 340 	 result: null 
+sample350_loss[228.70717].wav 	 350 	 result: null 
+sample360_loss[229.30579].wav 	 360 	 result: null 
+sample370_loss[228.61353].wav 	 370 	 result: null 
+sample380_loss[229.59555].wav 	 380 	 result: null 
