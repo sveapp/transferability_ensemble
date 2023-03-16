@@ -9,4 +9,4 @@ https://github.com/tensorflow/lingvo
 
 https://github.com/kaldi-asr/kaldi
 
-Among these files, the "ensembleattack.py" file is the program launcher, you can change the corresponding 'input_audio_path' and 'target' and then run
+Among these files, the "ensembleattack.py" file is the program launcher, you can change the corresponding 'input_audio_path' and 'target' and then run.
